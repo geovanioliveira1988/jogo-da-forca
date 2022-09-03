@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="home">
+            <div class="titulo">
+                <label>JOGO &nbsp; DA &nbsp; F</label>
+                <img class="imgForca" src="./imagens/forca.png">
+                <label>RCA</label>
+            </div>
+            <div class="divBotoes">
+                <section>
+                    <div class="divIniciarJogo">
+                        <button class="btIniciarJogo" onclick="jogar()">Start</button>
+                    </div>
+                    <div class="divInserirPalavra">
+                        <button class="btInserirPalavra" onclick="habInput()">
+                            Adicionar Palavra
+                        </button>
+                    </div>
+
+                    <!-- Cadastrar Palavra -->
+                    <div class="divInpInserir">
+                        <div>
+                            <input class="inputPalavra" type="text" placeholder="PALAVRA" required>
+                        </div>
+                        <div>
+                            <input class="inputDica" type="text" placeholder="DICA" required>
+                            <button class="btIr" onclick="adicionarPalavraDica()">&#10154;</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="game">
+            <canvas></canvas>
+
+            <div class="lampada">
+                <img src="/imagens/lampada.png" alt="" srcset=""
+                    style="width: 120px; height:120px; position: absolute; left: 50%; top: 23%;">
+            </div>
+            <div class="trofeu">
+                <span class="imgGanhou">&#127942;</span>
+                <label class="msgGanhou">Parabéns !!! Você Ganhou !!!</label>
+            </div>
+            <div class="perdeu">
+                <span class="imgPerdeu">&#128517;</span>
+                <label class="msgPerdeu">Ahh que pena !!! Você Perdeu !!!</label>
+            </div>
+
+            <label class="txtDica"><b>DICA !!!</b></label>
+
+            <div class="dica"></div>
+
+            <div class="divLetrasErradas">LETRAS ERRADAS</div>
+        </div>
+        <br><br><br><br><br>
+        <footer>Developed by: Geovani Oliveira da Luz</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: black;  
+}
+
+.principal{
+    width: 1440px;
+    height: 1024px;
+    top: -513;
+    left: -720;
+    position:absolute;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: auto;        
+    background-image: url("../imagens/background.png");
+    background-size: 1440px 1024px;
+}
+
+.principal .home .titulo{
+    font-family: 'Press Start 2P', cursive;
+    word-spacing: -40px;
+    color: white        ;
+    font-size: 60px;    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
+    top: 20px;
+    margin-top: 40px;        
+}
+
+.imgForca{    
+    height: 140px;    
+}
+
+section{
+    width: 400px;
+    height: 250px;
+    border: 3px solid #101820;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    border-radius: 10px;    
+    box-shadow: 5px 5px 5px;
+    background-color:bisque  
+}
+
+.divIniciarJogo{
+    background-color: #AA0000;
+    width: 280px;
+    height: 70px;    
+    margin-left: auto;
+    margin-right: auto;       
+    border-radius: 20px;  
+    text-align: center;
+    margin-top: 10%;        
+}
+
+.btIniciarJogo{
+    width: 280px;
+    height: 70px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bol;
+    background-color: #AA0000;
+    color: white;
+    border: 3px solid #101820;
+    border-radius: 20px;
+
+}
+
+.divInserirPalavra{
+    background-color:bisque; 
+    width: 280px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto; 
+    left: 600px;    
+    border-radius: 20px;  
+    text-align: center;
+    top: 438px;
+    margin-top: 2%;      
+}
+
+.btInserirPalavra{
+    width: 280px;
+    height: 70px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    font-style: italic;
+    background-color: #3b5998;
+    color: white;
+    border: 3px solid #101820;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    position: absolute;
+    margin-top: 2%; 
+    left: 580px;
+}
+
+.divInpInserir{
+    background-color: transparent;
+    width: 280px;
+    height: 70px;
+    position: absolute;
+    left: 580px;    
+    border-radius: 20px;  
+    text-align: center;
+    top: 438px;
+    display: none;
+    margin-top: 2%;
+}
+
+.inputPalavra{
+    width: 270px;
+    height: 35px;    
+    top: 438px;
+    left: 600px;  
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;  
+    color:#AA0000;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    text-transform: uppercase;  
+}
+
+.inputDica{
+    width: 220px;
+    height: 35px;
+    top: 522px;
+    left: 600px;    
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    color: #AA0000;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.btIr{
+    background-color:#AA0000;
+    color: #002244;
+    font-size: 27px;
+    border-radius: 10px;  
+    float: right;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;      
+}
+
+.divBotoes{
+    display: inline;
+}
+
+.game{
+    display: none;
+}
+
+.trofeu{
+    display: none;
+}
+
+.perdeu{
+    display: none;
+}
+
+.txtDica{
+    font-size: 25px;
+    color: yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 27%;
+    left: 930px;
+}
+
+.dica{
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #AA0000;
+    border-radius: 5px;
+    position: absolute;
+    left: 830px;
+    top: 325px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;        
+}
+
+.divLetrasErradas{
+    position: absolute;
+    top: 270px;
+    left: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: bold;  
+}
+
+canvas{
+    width: 900px;
+    height: 320px;  
+    position: absolute;
+    left: 0%;
+    top:25%;        
+}
+
+.imgPerdeu{
+    font-size: 60px;    
+    position: absolute;
+    left: 50%;
+    top: 30%;
+}
+
+.msgPerdeu{
+    font-size: 30px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 57%;
+    top: 32%;
+    font-weight: bold;
+}
+
+.msgGanhou{
+    font-size: 30px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 57%;
+    top: 32%;
+    font-weight: bold;
+}
+
+.imgGanhou{
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+}
+
+footer{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color:white;
+    font-style: italic;
+    margin-top: 100px;
+    
+}
