@@ -70,6 +70,11 @@ function adicionarPalavraDica(){
 //função principal
 
 function jogar(){  
+  if (vetPalavras && vetDica == ""){
+    alert ("Obrigatório adicionar pelo menos uma palavra e uma dica");
+    location.reload();
+  }
+  
   let divBotoes = document.querySelector('.divBotoes');
   let tela = document.querySelector('canvas');
   let pincel = tela.getContext('2d');
